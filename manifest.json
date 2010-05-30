@@ -1,0 +1,15 @@
+{
+	"name": "The Good Old Days",
+	"version": "1.0.4",
+	
+	"description": "This is a Google Chrome extension, that shows you what have happened in the same day last year.",
+	"browser_action": {
+		"popup": "california.html",
+		"default_icon": "images/date_16.png"
+	},
+	
+	"permissions": [
+		"http://api.flickr.com/",
+		"http://*.yupoo.com/"
+	]
+}

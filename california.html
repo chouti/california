@@ -1,11 +1,31 @@
 <html>
 	<head>
 		<title>The Good Old Days</title>
-		<link rel="stylesheet" src="css/california.css">
+		<link rel="stylesheet" href="css/california.css">
+		<link rel="stylesheet" href="css/jquery.ui.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.js"></script>
 		<script type="text/javascript">
-			
+			$(function(){
+				$("#tabs").tabs({
+					ajaxOptions:{
+						error: function (xhr, status, index, anchor){
+							$(anchor.hash).html("Couldn't load this tab. We'll try to fix this as soon as possible.");
+						}
+					}
+				});
+			});
 		</script>
 	</head>
+	<body>
+		<div id="wrap">
+			<div id="tabs">
+				<ul>
+					<li><a href="california_f.html" title="Flcikr"><span>Flickr</span></a></li>
+					<li><a href="california_y.html" title="Yupoo"><span>Yupoo</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/a.js"></script>
+	</body>
 </html>

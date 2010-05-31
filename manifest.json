@@ -3,9 +3,17 @@
 	"version": "1.0.4",
 	
 	"description": "This is a Google Chrome extension, that shows you what have happened in the same day last year.",
+	"icons": {
+		"16": "images/icon_16.png",
+		"32": "images/icon_32.png",
+		"48": "images/icon_48.png",
+		"64": "images/icon_64.png",
+		"128": "images/icon_128.png",
+		"256": "images/icon_256.png"
+	},
 	"browser_action": {
 		"popup": "california.html",
-		"default_icon": "images/date_16.png"
+		"default_icon": "images/icon_16.png"
 	},
 	
 	"permissions": [

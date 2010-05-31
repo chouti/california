@@ -1,5 +1,5 @@
-$('#loading').fadeIn('fast',function(){
-	$('#images').empty();
+$('#loady').fadeIn('fast',function(){
+	$('#yupoo').empty();
 
 	var d = new Date();
 	var date= d.getDate();
@@ -20,10 +20,7 @@ $('#loading').fadeIn('fast',function(){
 	   dataType: "xml",	
 	   data: "method=yupoo.interestingness.getList&" +
 			"api_key=bdda85402c863453487c2a7a61a709fd&" +
-			"per_page=10&"+"page="+page+"&"+
-			"date="+year+
-			"-"+month+
-			"-"+date,
+			"per_page=20",
 
    success:function(msg){$(msg).find('photo').each(function(){
 	var id     = $(this).attr('id');
@@ -36,18 +33,18 @@ $('#loading').fadeIn('fast',function(){
 	var dir = $(this).attr('dir');
 	var filename = $(this).attr('filename');
 	var url    = "http://photo" +host+ ".yupoo.com/" +dir+ "/" +filename+ "/square/";
-	var dest   = "http://www.yupoo.com/photos/"+owner+"/"+filename+"/";
+	var dest   = "http://www.yupoo.com/photos/"+ownername+"/"+id+"/";
 	var image  = '<a href="'+dest+'" target="_blank"><img src="'+url+'" /></a>';	
-	$('#images').append(image);
-	$('#loading').fadeOut('fast',function(){
-		$('#images').fadeIn('fast');
+	$('#yupoo').append(image);
+	$('#loady').fadeOut('fast',function(){
+		$('#yupoo').fadeIn('fast');
 	});
    });
    },
    error:function(){
-	$('#images').html('<p>Error in connection, Please check your internet connection</p>');
-	$('#loading').fadeOut('fast',function(){
-		$('#images').fadeIn('fast');
+	$('#yupoo').html('<p>Error in connection, Please check your internet connection</p>');
+	$('#loady').fadeOut('fast',function(){
+		$('#yupoo').fadeIn('fast');
 	});
    }
  });

@@ -1,5 +1,5 @@
 body{
-	min-width:325px;
+	min-width:350px;
 	overflow:hidden;
 	font-family:arial;
 	font-size:12px;
@@ -10,13 +10,13 @@ h4{
 margin:-2px 0 10px 0;
 width:300px;
 text-align:center;
-color:#ff007d;
+color: #ff007d;
 font-family:verdana;
 }
 
 #wrap{
 margin:0px;
-width:300px;
+width:325px;
 height:auto;
 display:block;
 }
@@ -42,7 +42,7 @@ vertical-align: center;
 
 #loadf{
 margin:0 auto;
-width:300px;
+width:325px;
 height:45px;
 background: url(../images/loadf.gif) no-repeat bottom;
 z-index:101;
@@ -51,7 +51,7 @@ display:none;
 
 #loady{
 margin:0 auto;
-width:300px;
+width:325px;
 height:45px;
 background: url(../images/loady.gif) no-repeat bottom;
 z-index:101;
@@ -76,6 +76,8 @@ display:none;
 
 #flickr{
 	width:325px;
+	margin: 0px;
+	padding: 0px;
 	overflow-x:hidden;
 	z-index-100;
 	}

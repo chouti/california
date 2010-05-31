@@ -1,5 +1,5 @@
-$('#loading').fadeIn('fast',function(){
-	$('#images').empty();
+$('#loadf').fadeIn('fast',function(){
+	$('#flickr').empty();
 
 	var d = new Date();
 	var date= d.getDate();
@@ -34,16 +34,16 @@ $('#loading').fadeIn('fast',function(){
 	var url    = "http://farm" +farm+ ".static.flickr.com/" +server+ "/" +id+ "_" +secret+ "_s.jpg";
 	var dest   = "http://www.flickr.com/photos/"+owner+"/"+id+"/";
 	var image  = '<a href="'+dest+'" target="_blank"><img src="'+url+'" /></a>';	
-	$('#images').append(image);
-	$('#loading').fadeOut('fast',function(){
-		$('#images').fadeIn('fast');
+	$('#flickr').append(image);
+	$('#loadf').fadeOut('fast',function(){
+		$('#flickr').fadeIn('fast');
 	});
    });
    },
    error:function(){
-	$('#images').html('<p>Error in connection, Please check your internet connection</p>');
-	$('#loading').fadeOut('fast',function(){
-		$('#images').fadeIn('fast');
+	$('#flickr').html('<p>Error in connection, Please check your internet connection</p>');
+	$('#loadf').fadeOut('fast',function(){
+		$('#flickr').fadeIn('fast');
 	});
    }
  });

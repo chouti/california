@@ -5,26 +5,20 @@
 		<link rel="stylesheet" href="css/jquery.ui.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.js"></script>
-		<script type="text/javascript" src="js/california_f.js"></script>
-		<script type="text/javascript" src="js/california_y.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				$("#tabs").tabs({
-					ajaxOptions:{
-						error: function (xhr, status, index, anchor){
-							$(anchor.hash).html("Couldn't load this tab. We'll try to fix this as soon as possible.");
-						}
-					}
+				$("#tabs").tabs()
 				});
-			});
 		</script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.js"></script>
 	</head>
 	<body>
 		<div id="wrap">
-			<div id="tabs" style="width:310px">
+			<div id="tabs" style="width:330px; padding:0px;">
 				<ul>
-					<li><a href="california_f.html" title="Flcikr"><span>Flickr</span></a></li>
-					<li><a href="california_y.html" title="Yupoo"><span>Yupoo</span></a></li>
+					<li><a href="california_f.html" title="flcikr"><span>Flickr</span></a></li>
+					<li><a href="california_y.html" title="yupoo"><span>Yupoo</span></a></li>
 				</ul>
 			</div>
 		</div>

@@ -27,7 +27,7 @@ $('#loady').fadeIn('fast',function(){
 				var url = 'http://photo' +item.host+ '.yupoo.com/' +item.dir+ '/' +item.filename+ '/square/';
 				var dest = 'http://www.yupoo.com/photos/'+item.ownername+'/'+photoid+'/';
 				var image = '<a href="'+dest+'" target="_blank"><img src="'+url+'" /></a>';
-				console.log(dest);
+				
 				$('#yupoo').append(image);
 				$('#loady').fadeOut('fast',function(){
 					$('#yupoo').fadeIn('fast');
